@@ -79,16 +79,55 @@
 //     ul.appendChild(li);
 // })
 
-function createMenu(){
-    let ul= document.createElement("ul");
-ul.id="menu";
-document.body.appendChild(ul);
+// function createMenu(){
+//     let ul= document.createElement("ul");
+// ul.id="menu";
+// document.body.appendChild(ul);
 
-let items=['home','about','blog','contact'];
-items.forEach(text=>{
-    let li=document.createElement('li');
-    li.textContent=text;
-    ul.appendChild(li);
-})
-}
+// let items=['home','about','blog','contact'];
+// items.forEach(text=>{
+//     let li=document.createElement('li');
+//     li.textContent=text;
+//     ul.appendChild(li);
+// })
+// }
+
+//document fragment
+// let languages = ['JS', 'TypeScript', 'Elm', 'Dart','Scala'];
+// let lan=document.querySelector("#language");
+// let fragment=new DocumentFragment();
+// languages.forEach((language)=>{
+
+//     let li=document.createElement("li");
+//     li.textContent=language;
+//     fragment.appendChild(li);
+// })
+// lan.appendChild(fragment);
+
+// insertBefore
+// let menu=document.querySelector("#menu");
+// let li=document.createElement("li");
+// li.textContent="Home    "
+// menu.insertBefore(li,menu.firstChild);
+// menu.insertBefore(li,menu.firstElementChild);
+
+// Append
+// let menu=document.querySelector("#name ");
+// names=['Newaz','mamun','parvaz'];
+// let m= names.map((name)=>{
+//     let li=document.createElement("li");
+//     li.textContent=name;
+//     return li;
+// })
+// menu.append(...m);
+
+// Prepend
+// let menu=document.querySelector("#name ");
+// names=['Newaz','mamun','parvaz'];
+// let m= names.map((name)=>{
+//     let li=document.createElement("li");
+//     li.textContent=name;
+//     return li;
+// })
+// menu.prepend(...m);
 
